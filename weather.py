@@ -53,10 +53,10 @@ if response.status_code == 200:
     wind_speed = data["wind"]["speed"]
     wind_direction = data["wind"]["deg"]
 
-    logger.info(f"location: {city}")
+    logger.info(f"LOCATION: {city}")
     logger.info(f"status: {weather_status}")
     logger.info(f"temp: {temp}")
-    logger.info(f"feels_like: {feels_like}")
+    logger.info(f"feels like: {feels_like}")
     logger.info(f"wind speed: {wind_speed}")
     logger.info(f"wind direction: {degrees_to_compass(wind_direction)}")
 else:
